@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+
+/* .noto-sans kr-<uniquifier> {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+
+
+  html, body {
+    -webkit-font-smoothing: antialiased;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  img,video{
+    width: 100%;
+  }
+  .flex_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main_title{
+    height: 82vh;
+    position: relative;
+  }
+  .main_title h1 {
+    height: 100px;
+    text-align: center;
+    padding-top: 100vw;
+  }
+  .main_title video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .main_title h1 span {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    animation: bounce .3s ease infinite alternate;
+    font-family: 'Titan One', cursive;
+    font-size: 50px;
+    color: rgb(233, 21, 180);
+    text-shadow: 0 1px 0 #f0f0f0,
+                 0 2px 0 #f0f0f0,
+                 0 3px 0 #f0f0f0,
+                 0 4px 0 #f0f0f0,
+                 0 5px 0 #f0f0f0,
+                 0 6px 0 transparent,
+                 0 7px 0 transparent,
+                 0 8px 0 transparent,
+                 0 9px 0 transparent,
+                 0 10px 10px rgba(0, 0, 0, .4);
+  }
+  
+  .main_title h1 span:nth-child(2) { animation-delay: .1s; }
+  .main_title h1 span:nth-child(3) { animation-delay: .2s; }
+  .main_title h1 span:nth-child(4) { animation-delay: .3s; }
+  .main_title h1 span:nth-child(5) { animation-delay: .4s; }
+  .main_title h1 span:nth-child(6) { animation-delay: .5s; }
+  .main_title h1 span:nth-child(7) { animation-delay: .6s; }
+  .main_title h1 span:nth-child(8) { animation-delay: .7s; }
+  
+
+  .sub_title{
+    position: relative;
+  }
+   .sub_title .black{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(252, 200, 200, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+   }
+   .sub_title .flex_box{
+    position: relative;
+    overflow: hidden;
+    z-index: 1111;
+    padding: 10vh 0;
+    gap: 5%;
+   }
+   .sub_title .flex_box p{
+    color: #000;
+    line-height: 180%;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+   }
+  .sub_title > p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    padding: 20px 0;
+    color: #000;
+    position: relative;
+    z-index: 999;
+  }
+  .sub_title .main_img{
+    position: relative;
+    z-index: 999;
+    margin-top: 200px;
+  }
+  .sub_title .text{
+    padding: 0 15px;
+    width: 55%;
+    text-align: center;
+  }
+  .sub_title .imgbox{
+    width: 40%;
+    border-radius: 30px;
+  }
+  .sub_title .imgbox img{
+    border-radius: 30px;
+  }
+  .textbox{
+    height: 100vh;
+  }
+  .ab_box{
+    position: relative;
+    overflow: hidden;
+    height: 170vh;
+    background-color: #dadada;
+  }
+  .ab_box img{
+    width: 100px;
+    position: absolute;
+  }
+  .ab_box h2{
+    padding: 20px 0;
+    text-align: center;
+  }
+  .ab_box img:nth-child(2){
+    width: 200px;
+    left: 25%;
+    bottom: 0;
+    z-index: 1;
+  }
+  .ab_box img:nth-child(3){
+    left: 5%;
+    top: 10%;
+  }
+  .ab_box img:nth-child(4){
+    left: 35%;
+    top: 20%;
+  }
+  .ab_box img:nth-child(5){
+    left: 55%;
+    top: 40%;
+  }
+  .ab_box img:nth-child(6){
+    right: 5%;
+    top: 10%;
+  }
+  .ab_box img:nth-child(7){
+    left: 5%;
+    top: 50%;
+  }
+  .ab_box img:nth-child(8){
+    left: 15%;
+    top: 70%;
+  }
+  .ab_box img:nth-child(9){
+    right: 5%;
+    top: 50%;
+  }
+  .ab_box img:nth-child(10){
+    width: 100%;
+    z-index: 999;
+    left: 0%;
+    bottom: 0;
+  }
+  @keyframes bounce {
+    100% {
+      top: -20px;
+      text-shadow: 0 1px 0 #CCC,
+                   0 2px 0 #CCC,
+                   0 3px 0 #CCC,
+                   0 4px 0 #CCC,
+                   0 5px 0 #CCC,
+                   0 6px 0 #CCC,
+                   0 7px 0 #CCC,
+                   0 8px 0 #CCC,
+                   0 9px 0 #CCC,
+                   0 50px 25px rgba(0, 0, 0, .2);
+    }
+  }
+
+  .btn_wrap{
+    height: 50vh;
+  }
+  .btn_wrap p{
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .btn_wrap .btn,
+  .btn_wrap .btn_2{
+    width: 50%;
+    margin: auto;
+    height: 60px;
+    background-color: rgba(252, 0, 0, 0.5);
+    border-radius: 30px;
+    border: 1px solid rgb(226, 43, 104);  
+    box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.75); 
+  }
+  .btn_wrap .btn_2{
+    margin: 30px auto ;
+  }
+  .btn_wrap .btn p,
+  .btn_wrap .btn_2 p{
+    padding: 0;
+    line-height: 60px;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .fixed{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+    background: url(../img/sub_bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-y: scroll;
+  }
+  .fixed h2{
+    text-align: center;
+    margin: 50px 0;
+    color: #fff;
+  }
+  .fixed .textbox{
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+  }
+  .fixed .textbox p{
+    color: #fff;
+    font-weight: 500;
+    line-height: 160%;
+  }
+  .fixed .back,
+  .alr .back_2{
+    width: 50%;
+    height: 60px;
+    margin: 50px auto 0;
+    border-radius: 30px;
+    background-color: rgba(252, 0, 0, 0.5);
+  }
+  .fixed .back p,
+  .alr .back_2 p{
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+
+  }
+  .fixed .zdx{
+    position: relative;
+    z-index: 9999;
+  }
+  .fixed .black{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200vh;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .alr{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99999;
+    background-position: center;
+    background-size: cover;
+    overflow-y: scroll;
+  }
+  .alr video{
+    width: 100%;
+  }
