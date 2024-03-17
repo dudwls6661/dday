@@ -216,7 +216,7 @@
 -moz-box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.75); 
   }
   .btn_wrap .btn_2{
-    margin: 30px auto ;
+    margin: 30px auto 100px;
   }
   .btn_wrap .btn p,
   .btn_wrap .btn_2 p{
